@@ -15,6 +15,15 @@
 	</properties>
 	<dependencies>
 
+
+		<!-- linking backend project -->
+		<dependency>
+			<groupId>gayu</groupId>
+			<artifactId>mybackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+
+		</dependency>
+
 		<!-- JAVA EE -->
 		<dependency>
 			<groupId>javax</groupId>
