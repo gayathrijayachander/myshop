@@ -49,9 +49,27 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></scrip
 		</div>
 	</div>
 	
+	<div class="row">
+			
+				<div class="col-xs-12">
+				
+					
+					<table id="productListTable" class="table table-striped table-borderd">
+					<thead>
+						
+							<tr>
+							<th>ID</th>
+								<th>Name</th>
+								
+								</tr>
+						
+						</thead>
+	
 	</div>
 	
-	
+		</div>
+			
+			</div>
 	
 	
 	
