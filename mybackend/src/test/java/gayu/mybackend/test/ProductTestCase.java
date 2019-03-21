@@ -30,16 +30,16 @@ private static AnnotationConfigApplicationContext context;
 		productDAO = (ProductDAO)context.getBean("productDAO");
 	}
 	
-	/*
+
 	@Test
 	public void testCRUDProduct() {
 		
 		// create operation
 		product = new Product();
 				
-		product.setName("Oppo Selfie S53");
-		product.setBrand("Oppo");
-		product.setDescription("This is some description for oppo mobile phones!");
+		product.setName("");
+		product.setBrand("hermes");
+		product.setDescription("This is some description for hermes!");
 		product.setUnitPrice(25000);
 		product.setActive(true);
 		product.setCategoryId(3);
@@ -47,7 +47,7 @@ private static AnnotationConfigApplicationContext context;
 		
 		assertEquals("Something went wrong while inserting a new product!",
 				true,productDAO.add(product));		
-		
+	/*	
 		
 		// reading and updating the category
 		product = productDAO.get(2);
@@ -57,15 +57,15 @@ private static AnnotationConfigApplicationContext context;
 				
 		assertEquals("Something went wrong while deleting the existing record!",
 				true,productDAO.delete(product));		
-		
+		*/
 		// list
 		assertEquals("Something went wrong while fetching the list of products!",
 				6,productDAO.list().size());		
 				
 	}
-	*/
-			
 	
+		
+/*	
 	@Test
 	public void testListActiveProducts() {
 		assertEquals("Something went wrong while fetching the list of products!",
@@ -89,8 +89,7 @@ private static AnnotationConfigApplicationContext context;
 	} 
 	
 	
-	
-	
+	*/
 	
 	
 	

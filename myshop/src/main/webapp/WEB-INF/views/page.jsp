@@ -8,7 +8,7 @@
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
 
-<c:set var="contextRoot" value="${pageContext.request.contextPath}"/>
+<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
 
 <!DOCTYPE html>
@@ -27,17 +27,36 @@
 
 <script>
 	window.menu = '${title}';
+
+	window.contextRoot = '${contextRoot}'
 </script>
+
+
+<!-- Bootstrap Core CSS -->
+  <link href="${css}/bootstrap.min.css" rel="stylesheet">  
+
+
+<!-- Bootstrap Readable Theme -->
+ <!-- <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">  -->
+
+
+<!-- Bootstrap DataTables -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
+
+<!-- Custom styles for this template -->
+<link href="${css}/myapp.css" rel="stylesheet">
+
+
+
 
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	crossorigin="anonymous">
-<!-- Bootstrap core CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<link href="${css}/myapp.css" rel="stylesheet">
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	crossorigin="anonymous"></script>
@@ -51,13 +70,25 @@
 	crossorigin="anonymous"></script>
 
 
-</head>
 
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="//cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css">
+<script src="//cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>   
+<%--  <script
+	src="//https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap.min.js"></script>   --%>
+	
+	
 <body>
 
 	<div class="wrapper">
 
-		<link rel="stylesheet" type="text/css" href="css/myapp.css" />
+		<link rel="stylesheet" type="text/css" href="${css}/myapp.css" />
 
 		<!-- Navigation -->
 
@@ -90,9 +121,12 @@
 
 		</div>
 		<!-- Footer -->
-
-
 		<%@ include file="./shared/footer.jsp"%>
+
+		 	<!-- jQuery -->
+		<script src="${js}/jquery.js"></script>   
+
+
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="${js}/bootstrap.min.js"></script>
@@ -100,7 +134,10 @@
 		<!-- DataTable Plugin -->
 		<script src="${js}/jquery.dataTables.js"></script>
 
-		<!-- self coded java script -->
+		<!-- DataTable Bootstrap Script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+
+		<!-- Self coded JavaScript -->
 		<script src="${js}/myapp.js"></script>
 
 	</div>
